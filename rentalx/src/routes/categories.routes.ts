@@ -11,6 +11,7 @@ const upload = multer({
 });
 
 categoriesRoutes.post("/", (request, response) => {
+  console.log("Hello Docker!!!");
   return createCategoryController.handle(request, response);
 });
 
